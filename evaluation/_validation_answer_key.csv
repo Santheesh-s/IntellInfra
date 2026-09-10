@@ -1,0 +1,46 @@
+asset_id,os_id,os_name,suitability_score,hard_compatible_ground_truth,ram_gb,storage_gb,cpu_cores,tpm_version,secure_boot_support
+PC-0062,elementary8,elementary OS 8,1.0,1,16,128,6,2.0,True
+PC-0185,alma9,AlmaLinux 9,1.0,1,32,128,4,2.0,True
+PC-0054,ubuntu-studio2404,Ubuntu Studio 24.04,1.0,1,32,128,6,,False
+PC-0062,debian12,Debian 12,1.0,1,16,128,6,2.0,True
+PC-0353,bodhi,Bodhi Linux,1.0,1,8,128,8,1.2,False
+PC-0213,puppy,Puppy Linux,1.0,1,8,512,4,2.0,True
+PC-0091,win11,Windows 11,0.8992,0,32,512,4,1.2,False
+PC-0072,win11,Windows 11,0.7473,0,8,128,2,,False
+PC-0268,win11,Windows 11,0.7039,0,4,500,6,,False
+PC-0397,win11,Windows 11,0.8853,0,8,256,6,,False
+PC-0186,win11,Windows 11,0.8853,0,32,256,6,,False
+PC-0193,kdeneon,KDE neon,0.7948,1,16,500,2,,False
+PC-0223,pclinuxos,PCLinuxOS,0.7948,1,32,512,2,1.2,False
+PC-0416,elementary8,elementary OS 8,1.0,1,32,128,6,2.0,True
+PC-0421,parrot,Parrot OS,0.769,1,16,512,2,1.2,False
+PC-0280,win11,Windows 11,0.8853,0,8,256,8,,False
+PC-0306,antix,antiX,1.0,1,4,512,6,2.0,True
+PC-0418,puppy,Puppy Linux,1.0,1,4,128,8,2.0,True
+PC-0053,win11,Windows 11,0.752,0,8,256,2,1.2,False
+PC-0112,truenascore,TrueNAS CORE,1.0,1,4,256,6,2.0,True
+PC-0204,freebsd,FreeBSD,1.0,1,8,128,4,2.0,True
+PC-0409,elementary8,elementary OS 8,1.0,1,4,500,6,,False
+PC-0326,proxmox,Proxmox VE,1.0,1,4,128,4,1.2,False
+PC-0285,win11,Windows 11,0.8853,0,8,500,8,,False
+PC-0436,solus,Solus,1.0,1,32,512,8,,False
+PC-0082,rpios,Raspberry Pi OS,1.0,1,16,256,4,,False
+PC-0015,win11,Windows 11,0.603,0,4,500,8,1.2,False
+PC-0153,win11,Windows 11,0.8992,0,32,500,4,1.2,False
+PC-0096,rpios,Raspberry Pi OS,1.0,1,4,512,4,,False
+PC-0249,win11,Windows 11,0.8992,0,16,512,8,1.2,False
+PC-0132,garuda,Garuda Linux,1.0,1,16,512,4,1.2,False
+PC-0119,kubuntu2404,Kubuntu 24.04,1.0,1,8,500,4,,False
+PC-0168,win11,Windows 11,0.8853,0,8,512,4,,False
+PC-0388,debian13,Debian 13,1.0,1,16,500,6,2.0,True
+PC-0111,parrot,Parrot OS,1.0,1,8,500,8,2.0,True
+PC-0022,truenasscale,TrueNAS SCALE,1.0,1,4,256,6,,False
+PC-0011,win11,Windows 11,0.6084,0,4,500,2,,False
+PC-0318,manjaro,Manjaro,1.0,1,32,256,4,2.0,True
+PC-0424,debian12,Debian 12,1.0,1,16,256,8,1.2,False
+PC-0400,proxmox,Proxmox VE,0.769,1,16,512,2,,False
+PC-0482,ubuntu-budgie2404,Ubuntu Budgie 24.04,1.0,1,16,256,4,2.0,True
+PC-0255,win11,Windows 11,0.8992,0,16,256,4,1.2,False
+PC-0182,win11,Windows 11,0.8992,0,8,128,4,1.2,False
+PC-0369,ubuntu-unity2404,Ubuntu Unity 24.04,1.0,1,8,128,4,2.0,True
+PC-0357,whonix,Whonix,1.0,1,8,128,4,,False

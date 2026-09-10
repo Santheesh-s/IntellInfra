@@ -1,0 +1,73 @@
+software_id,software_name,category,min_ram_gb,min_storage_gb,min_cpu_cores,gpu_required,gpu_min_vram_gb,supported_os,confidence,source,source_url,last_verified
+vscode,Visual Studio Code,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+pycharm,PyCharm,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+intellij,IntelliJ IDEA,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+eclipse,Eclipse IDE,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+netbeans,Apache NetBeans,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+androidstudio,Android Studio,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+visualstudio,Visual Studio,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+xcode,Xcode,IDE,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+gcc,GCC,Compiler,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+clang,Clang,Compiler,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+git,Git,DevOps,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+docker,Docker Desktop,Virtualization,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+podman,Podman,Virtualization,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+virtualbox,VirtualBox,Virtualization,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+vmware,VMware Workstation,Virtualization,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+postgresql,PostgreSQL,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+mysql,MySQL,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+mariadb,MariaDB,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+mongodb,MongoDB,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+sqlite,SQLite,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+oracle-db,Oracle Database,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+sqlserver,SQL Server,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+redis,Redis,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+neo4j,Neo4j,Database,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+autocad,AutoCAD,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+solidworks,SOLIDWORKS,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+catia,CATIA,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+fusion360,Fusion 360,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+blender,Blender,3D,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+freecad,FreeCAD,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+maya,Autodesk Maya,3D,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+3dsmax,3ds Max,3D,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+sketchup,SketchUp,CAD,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+matlab,MATLAB,Scientific,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+octave,GNU Octave,Scientific,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+ansys,ANSYS,Simulation,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+comsol,COMSOL,Simulation,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+abaqus,Abaqus,Simulation,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+multisim,NI Multisim,Electronics,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+proteus,Proteus,Electronics,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+wireshark,Wireshark,Networking,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+packettracer,Cisco Packet Tracer,Networking,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+gns3,GNS3,Networking,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+burpsuite,Burp Suite,Security,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+nmap,Nmap,Security,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+metasploit,Metasploit,Security,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+kali-tools,Kali Tools,Security,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+office,Microsoft Office,Office,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+libreoffice,LibreOffice,Office,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+onlyoffice,ONLYOFFICE,Office,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+chrome,Google Chrome,Browser,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+firefox,Mozilla Firefox,Browser,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+edge,Microsoft Edge,Browser,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+acrobat,Adobe Acrobat Reader,PDF,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+photoshop,Adobe Photoshop,Graphics,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+illustrator,Adobe Illustrator,Graphics,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+premiere,Adobe Premiere Pro,Video,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+aftereffects,Adobe After Effects,Video,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+audition,Adobe Audition,Audio,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+gimp,GIMP,Graphics,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+inkscape,Inkscape,Graphics,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+krita,Krita,Graphics,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+obs,OBS Studio,Video,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+davinci,DaVinci Resolve,Video,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+audacity,Audacity,Audio,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+unity,Unity,GameDev,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+unreal,Unreal Engine,GameDev,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+godot,Godot,GameDev,8,10,2,True,4,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+tensorflow,TensorFlow,AI,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+pytorch,PyTorch,AI,8,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+anaconda,Anaconda,DataScience,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01
+jupyter,JupyterLab,DataScience,4,2,2,False,0,Windows;Linux;macOS,medium,vendor_docs,,2026-07-01

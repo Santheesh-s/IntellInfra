@@ -1,0 +1,37 @@
+location_id,block_name,lab_name,floor,latitude,longitude,geometry,asset_count
+admin-ailab,Admin,AI Lab,1,11.147453,79.482201,POINT(79.482201 11.147453),14
+admin-cadlab,Admin,CAD Lab,1,11.146013,79.488059,POINT(79.488059 11.146013),16
+admin-languagelab,Admin,Language Lab,1,11.140508,79.483624,POINT(79.483624 11.140508),11
+admin-networklab,Admin,Network Lab,1,11.147976,79.486981,POINT(79.486981 11.147976),15
+admin-programminglab,Admin,Programming Lab,1,11.146998,79.48489,POINT(79.484890 11.146998),13
+admin-researchlab,Admin,Research Lab,1,11.14567,79.483761,POINT(79.483761 11.145670),10
+blocka-ailab,Block A,AI Lab,1,11.144572,79.485645,POINT(79.485645 11.144572),11
+blocka-cadlab,Block A,CAD Lab,1,11.144655,79.485532,POINT(79.485532 11.144655),17
+blocka-languagelab,Block A,Language Lab,1,11.146452,79.486206,POINT(79.486206 11.146452),12
+blocka-networklab,Block A,Network Lab,1,11.14828,79.48868,POINT(79.488680 11.148280),14
+blocka-programminglab,Block A,Programming Lab,1,11.144008,79.484753,POINT(79.484753 11.144008),15
+blocka-researchlab,Block A,Research Lab,1,11.147536,79.486591,POINT(79.486591 11.147536),14
+blockb-ailab,Block B,AI Lab,1,11.149563,79.485898,POINT(79.485898 11.149563),12
+blockb-cadlab,Block B,CAD Lab,1,11.147606,79.486565,POINT(79.486565 11.147606),14
+blockb-languagelab,Block B,Language Lab,1,11.147174,79.488211,POINT(79.488211 11.147174),10
+blockb-networklab,Block B,Network Lab,1,11.145206,79.489389,POINT(79.489389 11.145206),11
+blockb-programminglab,Block B,Programming Lab,1,11.142524,79.482278,POINT(79.482278 11.142524),10
+blockb-researchlab,Block B,Research Lab,1,11.14271,79.487791,POINT(79.487791 11.142710),15
+blockc-ailab,Block C,AI Lab,1,11.144598,79.483767,POINT(79.483767 11.144598),14
+blockc-cadlab,Block C,CAD Lab,1,11.143541,79.486851,POINT(79.486851 11.143541),28
+blockc-languagelab,Block C,Language Lab,1,11.147582,79.487744,POINT(79.487744 11.147582),13
+blockc-networklab,Block C,Network Lab,1,11.142389,79.486787,POINT(79.486787 11.142389),17
+blockc-programminglab,Block C,Programming Lab,1,11.144644,79.487197,POINT(79.487197 11.144644),13
+blockc-researchlab,Block C,Research Lab,1,11.147827,79.480859,POINT(79.480859 11.147827),14
+blockd-ailab,Block D,AI Lab,1,11.139638,79.484991,POINT(79.484991 11.139638),12
+blockd-cadlab,Block D,CAD Lab,1,11.144839,79.482306,POINT(79.482306 11.144839),14
+blockd-languagelab,Block D,Language Lab,1,11.146101,79.488023,POINT(79.488023 11.146101),17
+blockd-networklab,Block D,Network Lab,1,11.143168,79.488275,POINT(79.488275 11.143168),18
+blockd-programminglab,Block D,Programming Lab,1,11.145735,79.485471,POINT(79.485471 11.145735),13
+blockd-researchlab,Block D,Research Lab,1,11.142982,79.48897,POINT(79.488970 11.142982),10
+library-ailab,Library,AI Lab,1,11.149396,79.486725,POINT(79.486725 11.149396),8
+library-cadlab,Library,CAD Lab,1,11.144649,79.48488,POINT(79.484880 11.144649),17
+library-languagelab,Library,Language Lab,1,11.146623,79.486847,POINT(79.486847 11.146623),14
+library-networklab,Library,Network Lab,1,11.145671,79.484153,POINT(79.484153 11.145671),12
+library-programminglab,Library,Programming Lab,1,11.145277,79.484341,POINT(79.484341 11.145277),11
+library-researchlab,Library,Research Lab,1,11.146789,79.485607,POINT(79.485607 11.146789),21

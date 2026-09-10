@@ -1,0 +1,68 @@
+os_id,os_name,os_family,min_ram_gb,recommended_ram_gb,min_storage_gb,min_cpu_cores,min_clock_ghz,tpm_required,secure_boot_required,architecture_support,eol_date,source_url,best_use_case
+win10,Windows 10,Windows,2,4,32,2,1.0,,False,x86;x64,2025-10-14,https://www.microsoft.com/windows,Legacy labs
+win11,Windows 11,Windows,4,8,64,2,1.0,2.0,True,x64,,https://www.microsoft.com/windows,Modern labs
+ubuntu2404,Ubuntu 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+ubuntu2204,Ubuntu 22.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+kubuntu2404,Kubuntu 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+xubuntu2404,Xubuntu 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+lubuntu2404,Lubuntu 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+ubuntu-mate2404,Ubuntu MATE 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+ubuntu-budgie2404,Ubuntu Budgie 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+ubuntu-studio2404,Ubuntu Studio 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+edubuntu2404,Edubuntu 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+ubuntu-unity2404,Ubuntu Unity 24.04,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+linuxmint22,Linux Mint 22,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+debian12,Debian 12,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+fedora42,Fedora 42,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+opensuse-leap,openSUSE Leap,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+opensuse-tw,openSUSE Tumbleweed,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+arch,Arch Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+manjaro,Manjaro,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+endeavouros,EndeavourOS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+garuda,Garuda Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+cachyos,CachyOS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+gentoo,Gentoo,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+void,Void Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+nixos,NixOS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+alpine,Alpine Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+solus,Solus,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+mx,MX Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+antix,antiX,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+puppy,Puppy Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+tinycore,Tiny Core Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+bodhi,Bodhi Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+peppermint,Peppermint OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+q4os,Q4OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+deepin,Deepin,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+zorin17,Zorin OS 17,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+elementary8,elementary OS 8,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+popos,Pop!_OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+kdeneon,KDE neon,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+kali,Kali Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+parrot,Parrot OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+blackarch,BlackArch,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+tails,Tails,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+whonix,Whonix,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+freebsd,FreeBSD,BSD,2,4,20,2,1.0,,False,x64,,,General purpose
+openbsd,OpenBSD,BSD,2,4,20,2,1.0,,False,x64,,,General purpose
+netbsd,NetBSD,BSD,2,4,20,2,1.0,,False,x64,,,General purpose
+ghostbsd,GhostBSD,BSD,2,4,20,2,1.0,,False,x64,,,General purpose
+truenascore,TrueNAS CORE,BSD,2,4,20,2,1.0,,False,x64,,,General purpose
+truenasscale,TrueNAS SCALE,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+proxmox,Proxmox VE,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+esxi,VMware ESXi,Hypervisor,2,4,20,2,1.0,,False,x64,,,General purpose
+xcpng,XCP-ng,Hypervisor,2,4,20,2,1.0,,False,x64,,,General purpose
+rpios,Raspberry Pi OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+chromeosflex,ChromeOS Flex,ChromeOS,2,4,20,2,1.0,,False,x64,,,General purpose
+alma9,AlmaLinux 9,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+rocky9,Rocky Linux 9,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+oracle9,Oracle Linux 9,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+rhel9,RHEL 9,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+centosstream10,CentOS Stream 10,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+amazlinux2023,Amazon Linux 2023,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+azurelinux,Azure Linux,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+photon,VMware Photon OS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+openmandriva,OpenMandriva,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+mageia,Mageia,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+pclinuxos,PCLinuxOS,Linux,2,4,20,2,1.0,,False,x64,,,General purpose
+debian13,Debian 13,Linux,2,4,20,2,1.0,,False,x64,,https://www.debian.org/releases/trixie/,General purpose

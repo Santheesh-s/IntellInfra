@@ -1,0 +1,41 @@
+text,true_intent,pred_intent,intent_correct,intent_confidence,true_location,pred_location,location_correct,true_os,pred_os,os_correct,true_software,pred_software,software_correct
+Can the machines in Block A even handle Windows 11?,os_compatibility_check,os_compatibility_check,True,0.989,Block A,Block A,True,Windows 11,Windows 11,True,,,True
+"I don't think the Network Lab PCs support Win11, can you check?",os_compatibility_check,software_compatibility_check,False,0.815,Network Lab,Network Lab,True,Windows 11,Windows 11,True,,,True
+Whats the deal with Block B and Windows 10 compatibility,os_compatibility_check,os_compatibility_check,True,0.958,Block B,Block B,True,Windows 10,Windows 10,True,,,True
+Is there any chance the AI Lab computers run Fedora 42 ok?,os_compatibility_check,os_compatibility_check,True,0.952,AI Lab,AI Lab,True,Fedora 42,Fedora 42,True,,,True
+please tell me if programming lab systems r compatible w ubuntu 24.04,os_compatibility_check,os_compatibility_check,True,0.96,Programming Lab,Programming Lab,True,Ubuntu 24.04,Ubuntu 24.04,True,,,True
+Block C machines -- Windows 11 yes or no,os_compatibility_check,os_compatibility_check,True,0.993,Block C,Block C,True,Windows 11,Windows 11,True,,,True
+so which os is actually best for the library computers,os_recommendation,os_recommendation,True,0.911,Library,Library,True,,,True,,,True
+if you had to pick one OS for CAD Lab what would it be,os_recommendation,os_recommendation,True,0.969,CAD Lab,CAD Lab,True,,,True,,,True
+whats the ideal operating system given the specs in block d,os_recommendation,os_recommendation,True,0.981,Block D,Block D,True,,,True,,,True
+"Language Lab needs a new OS, suggestions?",os_recommendation,os_recommendation,True,0.969,Language Lab,Language Lab,True,,,True,,,True
+what should we install on the research lab machines,os_recommendation,os_compatibility_check,False,0.655,Research Lab,Research Lab,True,,,True,,,True
+out of curiosity what os would you recommend for admin,os_recommendation,os_recommendation,True,0.974,Admin,Admin,True,,,True,,,True
+"these block a computers are ancient, what needs replacing",upgrade_planning,reverse_software_lookup,False,0.436,Block A,Block A,True,,,True,,,True
+figure out which machines in the network lab are due for an upgrade,upgrade_planning,os_compatibility_check,False,0.346,Network Lab,Network Lab,True,,,True,,,True
+"we've got budget this year, what should we prioritize upgrading in block c",upgrade_planning,software_compatibility_check,False,0.593,Block C,Block C,True,,,True,,,True
+anything ancient still running in the library that needs attention,upgrade_planning,software_compatibility_check,False,0.406,Library,Library,True,,,True,,,True
+time to replace old hardware -- where should we start in block b,upgrade_planning,hardware_query,False,0.859,Block B,Block B,True,,,True,,,True
+does the programming lab even have enough ram for anything modern,hardware_query,hardware_query,True,0.734,Programming Lab,Programming Lab,True,,,True,,,True
+how many machines in block d have ssds,hardware_query,os_compatibility_check,False,0.641,Block D,Block D,True,,,True,,,True
+give me the cpu breakdown for the ai lab,hardware_query,hardware_query,True,0.517,AI Lab,AI Lab,True,,,True,,,True
+whats the average ram across the research lab computers,hardware_query,hardware_query,True,0.432,Research Lab,Research Lab,True,,,True,,,True
+do any admin block machines have tpm chips,hardware_query,upgrade_planning,False,0.441,Admin,Admin,True,,,True,,,True
+can blender actually run on the cad lab machines,software_compatibility_check,software_compatibility_check,True,0.936,CAD Lab,CAD Lab,True,,,True,Blender,Blender,True
+checking if photoshop would work on block c hardware,software_compatibility_check,hardware_query,False,0.859,Block C,Block C,True,,,True,Photoshop,Adobe Photoshop,False
+will the network lab pcs handle wireshark fine,software_compatibility_check,hardware_query,False,0.38,Network Lab,Network Lab,True,,,True,Wireshark,Wireshark,True
+"thinking about installing matlab in the research lab, feasible?",software_compatibility_check,software_compatibility_check,True,0.972,Research Lab,Research Lab,True,,,True,MATLAB,MATLAB,True
+does anaconda run ok on the ai lab systems,software_compatibility_check,software_compatibility_check,True,0.723,AI Lab,AI Lab,True,,,True,Anaconda,Anaconda,True
+not sure if the library computers could run libreoffice smoothly,software_compatibility_check,software_compatibility_check,True,0.35,Library,Library,True,,,True,LibreOffice,LibreOffice,True
+what could we actually install on the current programming lab setup,reverse_software_lookup,software_compatibility_check,False,0.343,Programming Lab,Programming Lab,True,,,True,,,True
+"given the hardware in block a, what software options do we have",reverse_software_lookup,reverse_software_lookup,True,0.788,Block A,Block A,True,,,True,,,True
+list stuff compatible with whatever is running in the language lab,reverse_software_lookup,reverse_software_lookup,True,0.876,Language Lab,Language Lab,True,,,True,,,True
+what can these old admin machines actually still run,reverse_software_lookup,os_compatibility_check,False,0.598,Admin,Admin,True,,,True,,,True
+show compatible apps for block d hardware,reverse_software_lookup,hardware_query,False,0.438,Block D,Block D,True,,,True,,,True
+"upgrade or os change, which fixes block c faster",upgrade_planning,os_recommendation,False,0.592,Block C,Block C,True,,,True,,,True
+"running old software on new labs, what os makes sense for that in the cad lab",os_recommendation,reverse_software_lookup,False,0.739,CAD Lab,CAD Lab,True,,,True,,,True
+lab 2 -- worth upgrading or just switch os?,upgrade_planning,os_recommendation,False,0.969,Lab 2,Lab 2,True,,,True,,,True
+what does the research lab even have installed right now,hardware_query,software_compatibility_check,False,0.424,Research Lab,Research Lab,True,,,True,,,True
+any machine anywhere that can run autocad without upgrades,reverse_software_lookup,upgrade_planning,False,0.5,,,True,,,True,AutoCAD,AutoCAD,True
+"give me a straight answer: win11 on block b, yes or no",os_compatibility_check,software_compatibility_check,False,0.593,Block B,Block B,True,Windows 11,Windows 11,True,,,True
+honestly just tell me the best linux distro for ai lab,os_recommendation,os_recommendation,True,0.649,AI Lab,AI Lab,True,,,True,,,True

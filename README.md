@@ -1,100 +1,81 @@
-# IntellInfra
+# Campus Spatial Decision Support System — Setup Guide
 
-> "A GIS-Integrated NLP-Driven Explainable Al Framework for Intelligent Hardware Asset Management and Operating System Optimization." 
-
-IntellInfra is an intelligent, GIS-enabled Progressive Web App (PWA) designed to help organizations manage computer infrastructure and make informed deployment decisions. Unlike conventional asset management systems, this platform combines Geographic Information Systems (GIS), Natural Language Processing (NLP), Explainable Artificial Intelligence (XAI), and decision-support algorithms to provide intelligent recommendations and transparent infrastructure insights.
-
----
-
-## 🌟 High-Level Overview
-
-The system allows administrators to interact with the platform using natural language queries instead of manual filtering. For example:
-* *"Show all computers in Block C that cannot run Windows 11."* 
-* *"Recommend the best operating system for the systems in the Programming Lab."* 
-
-The NLP engine interprets the request, the GIS component identifies the relevant hardware assets on a digital campus map, and the XAI recommendation engine evaluates each system against operating system requirements and organizational needs.
-
-The result is an interactive decision-support platform that not only recommends the most suitable operating systems but also visually displays affected systems on a GIS map and transparently explains the reasoning behind every recommendation.
-
----
-
-## 🏗️ The Tech Stack (Full Python Architecture)
-
-This architecture utilizes a unified Python backend to seamlessly connect web routing, spatial querying, and complex AI operations into a single robust application.
-
-**Frontend (The User Interface)**
-* HTML, CSS, JavaScript .
-* Progressive Web App (PWA).
-* Interactive dashboards and charts .
-* GIS-enabled map visualization (Leaflet.js / ArcGIS) .
-
-**Backend & Intelligence Layer (Python)**
-* **Framework:** FastAPI / Django (Handling REST APIs and routing)
-* **NLP Processing Engine:** spaCy / HuggingFace (Intent Classification & Entity Extraction)
-* **Recommendation Engine:** Scikit-Learn / XGBoost (Multi-Criteria Decision Making)
-* **Explainable AI Engine:** SHAP (Shapley Additive Explanations) .
-* **Spatial Routing:** GeoAlchemy / SQLAlchemy
-
-**Database Layer**
-* PostgreSQL .
-* PostGIS Extension .
-* Databases: Asset inventory, OS requirements, and Hardware compatibility .
-
----
-
-## ⚙️ The Complete System Flow
-
-1. **Natural Language Interaction:** The administrator enters a natural language request.
-2. **NLP-Based Query Understanding:** The NLP module performs Intent Classification and Entity Extraction . The backend converts these entities into structured database and GIS queries.
-3. **GIS-Based Asset Resolution:** The GIS engine queries the database and identifies every computer located within the requested spatial region on the campus map.
-4. **Hardware Analysis:** Multi-Criteria Decision Making (MCDM) techniques evaluate hardware compatibility, security requirements, and organizational policies.
-5. **Explainable AI Decision Engine:** The XAI engine generates a compatibility score and explains every decision using feature importance values (e.g., deducting percentages for RAM limitations or TPM absence).
-6. **GIS Visualization:** Results are displayed on the campus GIS map, utilizing interactive heatmaps to highlight compatible systems, upgrade priorities, and security vulnerability hotspots.
-
----
-
-## 🚀 Local Development Setup
-
-This project is optimized for Linux-based development environments (tested on Lubuntu). 
-
-### Prerequisites
-* Python 3.10+
-* PostgreSQL with PostGIS extension installed
-* Git
-
-### Installation Steps
-
-**1. Clone the repository**
-Bash
+## Project Structure
 ```
-git clone [https://github.com/yourusername/IntellInfra.git](https://github.com/yourusername/IntellInfra.git)
-cd IntellInfra
+campus-dss/
+├── requirements.txt
+├── data/                       ← your 6 validated CSVs
+│   ├── hardware_inventory.csv
+│   ├── os_requirements.csv
+│   ├── software_requirements.csv
+│   ├── software_cache.csv
+│   ├── campus_spatial_data.csv
+│   └── nlp_query_dataset_10000.csv
+├── backend/
+│   ├── database.py             ← DB connection
+│   ├── models.py                ← SQLAlchemy table definitions
+│   ├── load_data.py            ← loads CSVs into PostgreSQL
+│   └── main.py                  ← FastAPI app + endpoints
+└── notebooks/                  ← for NLP/MCDM/XAI experimentation (Phase 4-7)
 ```
 
-**2. Set up the Python Virtual Environment**
-Bash
+## Step 1 — Install PostgreSQL + PostGIS
+
+**Windows/Mac:** install via [postgresql.org](https://www.postgresql.org/download/) — PostGIS is included as an optional component in the installer (Stack Builder).
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt install postgresql postgresql-contrib postgis
 ```
+
+Then create the database:
+```bash
+sudo -u postgres createdb campus_dss
+```
+
+## Step 2 — Set up Python environment
+
+```bash
+cd campus-dss
 python3 -m venv venv
-source venv/bin/activate
-```
-
-**3. Install Dependencies**
-Bash
-```
+source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-**4. Database Configuration**
-Ensure PostgreSQL is running locally. Create a new database and enable the PostGIS extension:
+## Step 3 — Configure database connection
+
+Create a `.env` file in `backend/`:
 ```
-SQL
-CREATE DATABASE intellinfra_db;
-\c intellinfra_db
-CREATE EXTENSION postgis;
-Update your .env file with the correct database credentials.
+DATABASE_URL=postgresql://postgres:YOUR_PASSWORD@localhost:5432/campus_dss
 ```
 
-**5. Run the Development Server**
+## Step 4 — Load your datasets
 
-Bash
-```uvicorn main:app --reload```
+```bash
+cd backend
+python load_data.py
+```
+
+You should see output confirming all 6 datasets loaded (36 locations, 500 assets, 66 OS requirements, 72 software requirements, 50 cache entries, 10,000 NLP queries).
+
+## Step 5 — Run the API
+
+```bash
+uvicorn main:app --reload
+```
+
+Visit **http://localhost:8000/docs** — this gives you an interactive Swagger UI to test every endpoint without writing any frontend code yet.
+
+## Try These Endpoints First
+
+- `GET /locations` — see all 36 labs on the map data
+- `GET /assets?block=Block C` — all machines in Block C
+- `GET /assets/{asset_id}/os-compatibility?os_id=win11` — compatibility check for one machine
+- `GET /software/{software_id}/compatible-assets` — which machines can run a given software (Tier 1/2)
+
+## What's Next (Phase 4 onward)
+
+1. **NLP intent classifier** — train on `nlp_queries` table (10,000 labeled rows is more than enough)
+2. **MCDM/TOPSIS ranking** — replace the simple rule-based `/os-compatibility` check with full multi-OS ranking across all 66 OS entries
+3. **SHAP explanations** — add feature-contribution breakdowns to every score
+4. **Leaflet.js frontend** — visualize `/locations` and `/assets` on an actual campus map

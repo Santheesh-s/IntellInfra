@@ -1,0 +1,51 @@
+software_id,software_name,min_ram_gb,min_storage_gb,supported_os,gpu_required,confidence,source,raw_extraction_text,queried_at,verified_by_human
+cache-001,Blender,8,4,Windows;Linux;macOS,False,medium,llm_extracted_vendor_docs,Official installation guide requires approximately 2 GB storage.,2026-06-10,False
+cache-002,Godot,16,4,Windows;Linux,True,low,llm_extracted_vendor_docs,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-17,False
+cache-003,OBS Studio,8,4,Linux,False,medium,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-25,False
+cache-004,GIMP,8,1,Windows,False,low,llm_extracted_official_site,Vendor documentation lists 4 GB RAM minimum.,2026-06-26,False
+cache-005,Inkscape,8,2,Linux,False,low,llm_extracted_wikipedia,Vendor documentation lists 4 GB RAM minimum.,2026-06-06,False
+cache-006,Krita,16,2,Windows;Linux;macOS,False,medium,llm_extracted_wikipedia,Vendor documentation lists 4 GB RAM minimum.,2026-06-17,False
+cache-007,Shotcut,8,20,Windows;Linux,False,low,llm_extracted_vendor_docs,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-06,False
+cache-008,Kdenlive,8,1,Windows;Linux,False,low,llm_extracted_wikipedia,Documentation recommends 8 GB RAM for smooth performance.,2026-06-16,False
+cache-009,HandBrake,8,1,Windows,True,medium,llm_extracted_official_site,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-06,False
+cache-010,Audacity,8,4,Windows,True,low,llm_extracted_official_site,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-08,False
+cache-011,Wireshark,4,1,Linux,False,medium,llm_extracted_wikipedia,Official installation guide requires approximately 2 GB storage.,2026-06-10,False
+cache-012,Nmap,8,8,Windows;Linux;macOS,True,low,llm_extracted_vendor_docs,Vendor documentation lists 4 GB RAM minimum.,2026-06-02,False
+cache-013,Burp Suite,16,1,Linux,False,medium,llm_extracted_vendor_docs,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-27,False
+cache-014,Metasploit,2,1,Windows,True,low,llm_extracted_wikipedia,Vendor documentation lists 4 GB RAM minimum.,2026-06-24,False
+cache-015,Anaconda,4,8,Windows;Linux;macOS,True,medium,llm_extracted_wikipedia,Official installation guide requires approximately 2 GB storage.,2026-06-22,False
+cache-016,JupyterLab,8,2,Windows;Linux;macOS,True,medium,llm_extracted_wikipedia,Official installation guide requires approximately 2 GB storage.,2026-06-21,False
+cache-017,TensorFlow,4,4,Linux,True,medium,llm_extracted_vendor_docs,Vendor documentation lists 4 GB RAM minimum.,2026-06-21,False
+cache-018,PyTorch,8,1,Windows;Linux,True,low,llm_extracted_official_site,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-13,False
+cache-019,OpenCV,2,1,Windows;Linux,False,medium,llm_extracted_wikipedia,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-08,False
+cache-020,Apache Spark,16,1,Windows;Linux,False,medium,llm_extracted_vendor_docs,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-21,False
+cache-021,Hadoop,2,2,Windows;Linux;macOS,False,medium,llm_extracted_wikipedia,Documentation recommends 8 GB RAM for smooth performance.,2026-06-26,False
+cache-022,MongoDB Compass,16,20,Windows;Linux,True,medium,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-12,False
+cache-023,RedisInsight,8,1,Linux,False,low,llm_extracted_official_site,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-18,False
+cache-024,DBeaver,4,10,Windows;Linux,True,low,llm_extracted_wikipedia,Official installation guide requires approximately 2 GB storage.,2026-06-09,False
+cache-025,Postman,2,10,Windows;Linux;macOS,True,low,llm_extracted_wikipedia,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-18,False
+cache-026,Insomnia,16,1,Windows;Linux;macOS,False,medium,llm_extracted_vendor_docs,Documentation recommends 8 GB RAM for smooth performance.,2026-06-28,False
+cache-027,Arduino IDE,4,4,Linux,True,low,llm_extracted_vendor_docs,Documentation recommends 8 GB RAM for smooth performance.,2026-06-22,False
+cache-028,PlatformIO,4,10,Windows,False,low,llm_extracted_wikipedia,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-04,False
+cache-029,KiCad,2,1,Linux,True,medium,llm_extracted_vendor_docs,Vendor documentation lists 4 GB RAM minimum.,2026-06-04,False
+cache-030,FreeCAD,4,1,Windows;Linux;macOS,True,low,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-17,False
+cache-031,QGIS,2,4,Linux,True,medium,llm_extracted_vendor_docs,Vendor documentation lists 4 GB RAM minimum.,2026-06-21,False
+cache-032,ArcGIS Pro,2,8,Windows;Linux;macOS,True,low,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-27,False
+cache-033,Unity Hub,2,10,Windows;Linux;macOS,False,medium,llm_extracted_official_site,System requirements mention 8 GB RAM and modern 64-bit processor.,2026-06-27,False
+cache-034,Unreal Engine,2,2,Linux,True,medium,llm_extracted_official_site,Vendor documentation lists 4 GB RAM minimum.,2026-06-18,False
+cache-035,Steam,4,2,Windows,True,medium,llm_extracted_official_site,Documentation recommends 8 GB RAM for smooth performance.,2026-06-14,False
+cache-036,RStudio,8,20,Windows;Linux,False,low,llm_extracted_vendor_docs,Vendor documentation lists 4 GB RAM minimum.,2026-06-26,False
+cache-037,Julia,16,10,Windows;Linux;macOS,False,medium,llm_extracted_official_site,Documentation recommends 8 GB RAM for smooth performance.,2026-06-15,False
+cache-038,Octave,8,10,Windows;Linux;macOS,False,low,llm_extracted_wikipedia,Official installation guide requires approximately 2 GB storage.,2026-06-27,False
+cache-039,Scilab,4,10,Linux,True,low,llm_extracted_official_site,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-12,False
+cache-040,Cisco Packet Tracer,16,8,Windows;Linux,True,medium,llm_extracted_wikipedia,Documentation recommends 8 GB RAM for smooth performance.,2026-06-01,False
+cache-041,VirtualBox,8,1,Windows;Linux;macOS,False,medium,llm_extracted_vendor_docs,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-01,False
+cache-042,VMware Workstation,4,1,Windows;Linux;macOS,True,low,llm_extracted_wikipedia,Vendor documentation lists 4 GB RAM minimum.,2026-06-05,False
+cache-043,Docker Desktop,8,10,Linux,True,medium,llm_extracted_wikipedia,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-03,False
+cache-044,Podman Desktop,4,20,Windows,True,low,llm_extracted_wikipedia,Vendor documentation lists 4 GB RAM minimum.,2026-06-16,False
+cache-045,Minikube,8,1,Linux,False,medium,llm_extracted_vendor_docs,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-12,False
+cache-046,Helm,16,1,Windows;Linux;macOS,True,medium,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-02,False
+cache-047,Terraform,2,4,Windows,True,low,llm_extracted_official_site,Vendor documentation lists 4 GB RAM minimum.,2026-06-05,False
+cache-048,Vagrant,16,8,Linux,True,medium,llm_extracted_wikipedia,Community documentation indicates OpenGL compatible GPU recommended.,2026-06-26,False
+cache-049,Eclipse Che,4,2,Windows,False,medium,llm_extracted_wikipedia,Documentation recommends 8 GB RAM for smooth performance.,2026-06-24,False
+cache-050,Cursor,16,4,Windows;Linux,True,low,llm_extracted_official_site,Official installation guide requires approximately 2 GB storage.,2026-06-25,False
