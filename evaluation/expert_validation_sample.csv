@@ -1,46 +1,46 @@
-asset_id,os_id,os_name,ram_gb,storage_gb,cpu_cores,tpm_version,secure_boot_support,expert_verdict,reviewer_notes
-PC-0062,elementary8,elementary OS 8,16,128,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0185,alma9,AlmaLinux 9,32,128,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0054,ubuntu-studio2404,Ubuntu Studio 24.04,32,128,6,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0062,debian12,Debian 12,16,128,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0353,bodhi,Bodhi Linux,8,128,8,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0213,puppy,Puppy Linux,8,512,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0091,win11,Windows 11,32,512,4,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0072,win11,Windows 11,8,128,2,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0268,win11,Windows 11,4,500,6,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0397,win11,Windows 11,8,256,6,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0186,win11,Windows 11,32,256,6,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0193,kdeneon,KDE neon,16,500,2,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0223,pclinuxos,PCLinuxOS,32,512,2,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0416,elementary8,elementary OS 8,32,128,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0421,parrot,Parrot OS,16,512,2,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0280,win11,Windows 11,8,256,8,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0306,antix,antiX,4,512,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0418,puppy,Puppy Linux,4,128,8,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0053,win11,Windows 11,8,256,2,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0112,truenascore,TrueNAS CORE,4,256,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0204,freebsd,FreeBSD,8,128,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0409,elementary8,elementary OS 8,4,500,6,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0326,proxmox,Proxmox VE,4,128,4,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0285,win11,Windows 11,8,500,8,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0436,solus,Solus,32,512,8,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0082,rpios,Raspberry Pi OS,16,256,4,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0015,win11,Windows 11,4,500,8,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0153,win11,Windows 11,32,500,4,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0096,rpios,Raspberry Pi OS,4,512,4,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0249,win11,Windows 11,16,512,8,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0132,garuda,Garuda Linux,16,512,4,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0119,kubuntu2404,Kubuntu 24.04,8,500,4,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0168,win11,Windows 11,8,512,4,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0388,debian13,Debian 13,16,500,6,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0111,parrot,Parrot OS,8,500,8,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0022,truenasscale,TrueNAS SCALE,4,256,6,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0011,win11,Windows 11,4,500,2,,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0318,manjaro,Manjaro,32,256,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0424,debian12,Debian 12,16,256,8,1.2,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0400,proxmox,Proxmox VE,16,512,2,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0482,ubuntu-budgie2404,Ubuntu Budgie 24.04,16,256,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0255,win11,Windows 11,16,256,4,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0182,win11,Windows 11,8,128,4,1.2,False,not_compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0369,ubuntu-unity2404,Ubuntu Unity 24.04,8,128,4,2.0,True,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
-PC-0357,whonix,Whonix,8,128,4,,False,compatible,"FILLED BY RESEARCHER (Claude), not an independent reviewer -- mechanically applies the same rule the system uses. Does not constitute independent expert validation. See EVALUATION_SUMMARY.md."
+asset_id,os_id,os_name,ram_gb,min_ram_gb,storage_gb,min_storage_gb,cpu_cores,min_cpu_cores,cpu_clock_ghz,min_clock_ghz,tpm_version,tpm_required,secure_boot_support,secure_boot_required,expert_verdict,reviewer_notes
+PC-0062,elementary8,elementary OS 8,16,2,128,20,6,2,3.0,1.0,2.0,,True,False,,
+PC-0185,alma9,AlmaLinux 9,32,2,128,20,4,2,3.0,1.0,2.0,,True,False,,
+PC-0054,ubuntu-studio2404,Ubuntu Studio 24.04,32,2,128,20,6,2,3.9,1.0,,,False,False,,
+PC-0062,debian12,Debian 12,16,2,128,20,6,2,3.0,1.0,2.0,,True,False,,
+PC-0353,bodhi,Bodhi Linux,8,2,128,20,8,2,3.0,1.0,1.2,,False,False,,
+PC-0213,puppy,Puppy Linux,8,2,512,20,4,2,3.6,1.0,2.0,,True,False,,
+PC-0091,win11,Windows 11,32,4,512,64,4,2,3.0,1.0,1.2,2.0,False,True,,
+PC-0072,win11,Windows 11,8,4,128,64,2,2,3.7,1.0,,2.0,False,True,,
+PC-0268,win11,Windows 11,4,4,500,64,6,2,3.0,1.0,,2.0,False,True,,
+PC-0397,win11,Windows 11,8,4,256,64,6,2,3.0,1.0,,2.0,False,True,,
+PC-0186,win11,Windows 11,32,4,256,64,6,2,3.9,1.0,,2.0,False,True,,
+PC-0193,kdeneon,KDE neon,16,2,500,20,2,2,3.7,1.0,,,False,False,,
+PC-0223,pclinuxos,PCLinuxOS,32,2,512,20,2,2,3.7,1.0,1.2,,False,False,,
+PC-0416,elementary8,elementary OS 8,32,2,128,20,6,2,3.9,1.0,2.0,,True,False,,
+PC-0421,parrot,Parrot OS,16,2,512,20,2,2,3.7,1.0,1.2,,False,False,,
+PC-0280,win11,Windows 11,8,4,256,64,8,2,3.0,1.0,,2.0,False,True,,
+PC-0306,antix,antiX,4,2,512,20,6,2,3.9,1.0,2.0,,True,False,,
+PC-0418,puppy,Puppy Linux,4,2,128,20,8,2,3.0,1.0,2.0,,True,False,,
+PC-0053,win11,Windows 11,8,4,256,64,2,2,3.7,1.0,1.2,2.0,False,True,,
+PC-0112,truenascore,TrueNAS CORE,4,2,256,20,6,2,3.9,1.0,2.0,,True,False,,
+PC-0204,freebsd,FreeBSD,8,2,128,20,4,2,3.0,1.0,2.0,,True,False,,
+PC-0409,elementary8,elementary OS 8,4,2,500,20,6,2,3.9,1.0,,,False,False,,
+PC-0326,proxmox,Proxmox VE,4,2,128,20,4,2,3.6,1.0,1.2,,False,False,,
+PC-0285,win11,Windows 11,8,4,500,64,8,2,3.0,1.0,,2.0,False,True,,
+PC-0436,solus,Solus,32,2,512,20,8,2,3.0,1.0,,,False,False,,
+PC-0082,rpios,Raspberry Pi OS,16,2,256,20,4,2,3.6,1.0,,,False,False,,
+PC-0015,win11,Windows 11,4,4,500,64,8,2,3.0,1.0,1.2,2.0,False,True,,
+PC-0153,win11,Windows 11,32,4,500,64,4,2,3.6,1.0,1.2,2.0,False,True,,
+PC-0096,rpios,Raspberry Pi OS,4,2,512,20,4,2,3.0,1.0,,,False,False,,
+PC-0249,win11,Windows 11,16,4,512,64,8,2,3.0,1.0,1.2,2.0,False,True,,
+PC-0132,garuda,Garuda Linux,16,2,512,20,4,2,3.0,1.0,1.2,,False,False,,
+PC-0119,kubuntu2404,Kubuntu 24.04,8,2,500,20,4,2,3.0,1.0,,,False,False,,
+PC-0168,win11,Windows 11,8,4,512,64,4,2,3.6,1.0,,2.0,False,True,,
+PC-0388,debian13,Debian 13,16,2,500,20,6,2,3.9,1.0,2.0,,True,False,,
+PC-0111,parrot,Parrot OS,8,2,500,20,8,2,3.0,1.0,2.0,,True,False,,
+PC-0022,truenasscale,TrueNAS SCALE,4,2,256,20,6,2,3.9,1.0,,,False,False,,
+PC-0011,win11,Windows 11,4,4,500,64,2,2,3.7,1.0,,2.0,False,True,,
+PC-0318,manjaro,Manjaro,32,2,256,20,4,2,3.6,1.0,2.0,,True,False,,
+PC-0424,debian12,Debian 12,16,2,256,20,8,2,3.0,1.0,1.2,,False,False,,
+PC-0400,proxmox,Proxmox VE,16,2,512,20,2,2,3.7,1.0,,,False,False,,
+PC-0482,ubuntu-budgie2404,Ubuntu Budgie 24.04,16,2,256,20,4,2,3.6,1.0,2.0,,True,False,,
+PC-0255,win11,Windows 11,16,4,256,64,4,2,3.0,1.0,1.2,2.0,False,True,,
+PC-0182,win11,Windows 11,8,4,128,64,4,2,3.6,1.0,1.2,2.0,False,True,,
+PC-0369,ubuntu-unity2404,Ubuntu Unity 24.04,8,2,128,20,4,2,3.0,1.0,2.0,,True,False,,
+PC-0357,whonix,Whonix,8,2,128,20,4,2,3.0,1.0,,,False,False,,

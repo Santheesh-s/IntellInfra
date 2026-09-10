@@ -70,8 +70,11 @@ Visit **http://localhost:8000/docs** — this gives you an interactive Swagger U
 
 - `GET /locations` — see all 36 labs on the map data
 - `GET /assets?block=Block C` — all machines in Block C
-- `GET /assets/{asset_id}/os-compatibility?os_id=win11` — compatibility check for one machine
+- `GET /assets/{asset_id}/os-compatibility?os_id=win11` — binary rule-based compatibility check for one machine
+- `GET /assets/{asset_id}/rank?weight_profile=security_focused` — full TOPSIS ranking of every compatible OS for one machine, with the 6-criteria breakdown; `weight_profile` is optional (`default` / `security_focused` / `performance_focused`), defaults to the lab-context profile from `weights_config.py`
+- `GET /fleet/os-readiness?os_id=win11` — fleet-wide summary: what % of all 500 assets meet an OS's minimum requirements, plus a tally of the most common blocking reason
 - `GET /software/{software_id}/compatible-assets` — which machines can run a given software (Tier 1/2)
+- `GET /explain/{asset_id}/{os_id}` — SHAP feature-contribution breakdown for one asset x OS pair
 
 ## What's Next (Phase 4 onward)
 

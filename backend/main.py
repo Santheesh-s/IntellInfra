@@ -26,6 +26,13 @@ from nlp_pipeline import NLPPipeline
 from topsis_ranker import TOPSISRanker
 from shap_explainer import CompatibilityExplainer
 from enrichment_pipeline import SoftwareEnrichmentPipeline
+from weights_config import DEFAULT_WEIGHTS, SECURITY_FOCUSED_WEIGHTS, PERFORMANCE_FOCUSED_WEIGHTS
+
+WEIGHT_PROFILES = {
+    "default": DEFAULT_WEIGHTS,
+    "security_focused": SECURITY_FOCUSED_WEIGHTS,
+    "performance_focused": PERFORMANCE_FOCUSED_WEIGHTS,
+}
 
 nlp_pipeline = NLPPipeline()
 os_ranker = TOPSISRanker()
@@ -99,21 +106,12 @@ def list_assets(
     ]
 
 
-@app.get("/assets/{asset_id}/os-compatibility")
-def check_os_compatibility(asset_id: str, os_id: str, db: Session = Depends(get_db)):
+def _rule_based_check(asset: Asset, os_req: OSRequirement) -> tuple[bool, list[str]]:
     """
-    Check a single machine against a single OS's requirements.
-    This is the simple rule-based version — the MCDM/SHAP ranking
-    engine (Phase 5) will replace this with full multi-OS scoring.
+    Shared rule-based compatibility check, used by both the single
+    asset/OS endpoint and the fleet-wide readiness aggregate so the
+    two stay consistent.
     """
-    asset = db.query(Asset).filter(Asset.asset_id == asset_id).first()
-    os_req = db.query(OSRequirement).filter(OSRequirement.os_id == os_id).first()
-
-    if not asset:
-        raise HTTPException(status_code=404, detail=f"Asset '{asset_id}' not found")
-    if not os_req:
-        raise HTTPException(status_code=404, detail=f"OS '{os_id}' not found")
-
     reasons = []
     compatible = True
 
@@ -131,12 +129,115 @@ def check_os_compatibility(asset_id: str, os_id: str, db: Session = Depends(get_
             compatible = False
             reasons.append(f"TPM {os_req.tpm_required} required, machine has {asset.tpm_version}")
 
+    return compatible, reasons
+
+
+@app.get("/assets/{asset_id}/os-compatibility")
+def check_os_compatibility(asset_id: str, os_id: str, db: Session = Depends(get_db)):
+    """
+    Check a single machine against a single OS's requirements.
+    This is the simple rule-based version — the MCDM/SHAP ranking
+    engine (see /assets/{asset_id}/rank) provides full multi-OS,
+    multi-criteria scoring instead of this binary pass/fail.
+    """
+    asset = db.query(Asset).filter(Asset.asset_id == asset_id).first()
+    os_req = db.query(OSRequirement).filter(OSRequirement.os_id == os_id).first()
+
+    if not asset:
+        raise HTTPException(status_code=404, detail=f"Asset '{asset_id}' not found")
+    if not os_req:
+        raise HTTPException(status_code=404, detail=f"OS '{os_id}' not found")
+
+    compatible, reasons = _rule_based_check(asset, os_req)
+
     return {
         "asset_id": asset_id,
         "os_id": os_id,
         "os_name": os_req.os_name,
         "compatible": compatible,
         "reasons": reasons or ["Meets all minimum requirements"],
+    }
+
+
+@app.get("/assets/{asset_id}/rank")
+def rank_os_for_asset(
+    asset_id: str,
+    weight_profile: Optional[str] = Query(
+        None,
+        description="Override the TOPSIS criteria weights: 'default', "
+                    "'security_focused', or 'performance_focused'. "
+                    "Omit to use the lab-context default from weights_config.py.",
+    ),
+):
+    """
+    Full MCDM (TOPSIS) ranking of every architecture-compatible OS for
+    one machine, with the 6-criteria fitness breakdown per OS. This is
+    the ranking engine described in the paper's Section 3.3 — richer
+    than the binary /os-compatibility check above.
+    """
+    weights = None
+    if weight_profile:
+        if weight_profile not in WEIGHT_PROFILES:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Unknown weight_profile '{weight_profile}'. "
+                       f"Choose from: {list(WEIGHT_PROFILES.keys())}",
+            )
+        weights = WEIGHT_PROFILES[weight_profile]
+
+    try:
+        rankings = os_ranker.rank(asset_id, weights=weights)
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+    return {
+        "asset_id": asset_id,
+        "weight_profile": weight_profile or "auto (lab-context default)",
+        "os_count": len(rankings),
+        "rankings": rankings,
+    }
+
+
+@app.get("/fleet/os-readiness")
+def fleet_os_readiness(
+    os_id: str = Query(..., description="OS to check the whole fleet against, e.g. 'win11'"),
+    db: Session = Depends(get_db),
+):
+    """
+    Fleet-wide summary: what fraction of all campus assets meet the
+    minimum requirements for a given OS, using the same rule-based
+    check as /os-compatibility. Answers the exact question the paper's
+    Introduction frames as the core problem (e.g. Windows 10 EOL —
+    how much of the fleet can actually move to Windows 11 today).
+    """
+    os_req = db.query(OSRequirement).filter(OSRequirement.os_id == os_id).first()
+    if not os_req:
+        raise HTTPException(status_code=404, detail=f"OS '{os_id}' not found")
+
+    assets = db.query(Asset).all()
+    total = len(assets)
+    compatible_count = 0
+    reason_tally = {}
+
+    for asset in assets:
+        ok, reasons = _rule_based_check(asset, os_req)
+        if ok:
+            compatible_count += 1
+        else:
+            # Tally which requirement most often blocks this OS, e.g.
+            # "TPM 2.0 required, machine has None" -> bucket by prefix.
+            for r in reasons:
+                key = r.split(" ")[0] if not r.startswith("TPM") else "TPM"
+                reason_tally[key] = reason_tally.get(key, 0) + 1
+
+    return {
+        "os_id": os_id,
+        "os_name": os_req.os_name,
+        "total_assets": total,
+        "compatible_count": compatible_count,
+        "incompatible_count": total - compatible_count,
+        "compatible_pct": round(compatible_count / total * 100, 1) if total else 0.0,
+        "blocking_reason_tally": reason_tally,
     }
 
 
